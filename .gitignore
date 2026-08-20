@@ -1,0 +1,5 @@
+# FastF1 data cache & Analytics outputs
+data_cache/
+output/
+f1-analytics-kern/data_cache/
+f1-analytics-kern/output/

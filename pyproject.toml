@@ -1,0 +1,29 @@
+[project]
+name = "f1-analytics-kern"
+version = "0.1.0"
+description = "F1 2025 vs 2026 Telemetry Analytics & Broadcast Visualizations"
+authors = [{ name = "Guilherme Pedroza", email = "guilhermebarb0sa@proton.me" }]
+requires-python = ">=3.12"
+dependencies = [
+  "fastf1>=3.8.3",
+  "matplotlib>=3.11.1",
+  "pandas>=2.3.3",
+  "requests>=2.34.2",
+]
+
+[project.scripts]
+f1-analytics-kern = "f1_analytics_kern.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM"]
+
+[tool.ruff.format]
+quote-style = "double"
